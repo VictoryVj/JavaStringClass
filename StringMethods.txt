@@ -1,0 +1,71 @@
+import java.util.Arrays;
+
+public class StringImplementation
+{
+	
+	public static void main(String str[])
+	{
+		
+		String Str1 = "Vijay";
+		String Str2 = "Natarajan";
+	    String Quote ="All is well";
+	
+        System.out.println(Str1 + "\n" + Quote);
+	    
+	    String upperStr = "VIJAY";
+	
+	    String lowerStr = "vijay";
+	    if(upperStr.equals(lowerStr))
+	    {
+	    	System.out.println("They are equal");
+	    }
+	    else
+	    {
+	    	System.out.println("They are not equal");
+	    }
+	    
+	    if(upperStr.equalsIgnoreCase(lowerStr))
+	    {
+	        System.out.println("Same String");
+	    }
+	        
+	    
+	    System.out.println("Character at index : " + Str1.charAt(1));
+	
+	    System.out.println(Str1.compareTo(Str2));
+	
+	    System.out.println(Str1.contains("a"));
+	
+	    System.out.println(Str1.endsWith("y"));
+		System.out.println(Str1.indexOf("ij"));
+	    System.out.println("Length of string: " + Str1.length());
+	    
+	    String[] letterArray = Quote.split("");
+	    System.out.println(Arrays.toString(letterArray));
+	    char[] charArray = Quote.toCharArray();
+	    System.out.println(Arrays.toString(charArray));
+	    System.out.println(Quote.substring(1,4));
+	    System.out.println(Quote.toUpperCase());
+	    String randString = "   Bhairav   ";
+	    System.out.println(randString.trim());
+	    
+	    StringBuilder SB1 = new StringBuilder("A random string");
+	    System.out.println(SB1.append(" again"));
+	    System.out.println(SB1);
+	    System.out.println(SB1.delete(15, 21));
+	    System.out.println(SB1.capacity());
+	    SB1.ensureCapacity(60);
+	    System.out.println(SB1.length());
+	    SB1.trimToSize();
+	    System.out.println(SB1.insert(1, "nother"));
+	    
+	    StringBuffer sx1 = new StringBuffer();
+	    //sx1 = "xxx";
+	    sx1.append("aaaaaaaaaaaaaaaaaaaaaaaaaaaassssssssssssssssssssss");
+	    
+	    System.out.println(sx1);
+	    System.out.println(sx1.length());
+	    
+	}     
+
+}
